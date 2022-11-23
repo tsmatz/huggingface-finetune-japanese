@@ -5,10 +5,9 @@
 
 ## How to Setup and Run
 
-Here I have used **Ubuntu Server 20.04 LTS** in Microsoft Azure.<br>
-In general, the saved checkpoint in the training will become so large, because it's large model. Please expand disk in Azure VM, if you need. (See [here](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/expand-disks) to expand disk in Azure.)
+Here I have used **Ubuntu Server 20.04 LTS** in Microsoft Azure.
 
-Install and setup HuggingFace transformers and DeepSpeed.
+Install and setup HuggingFace and DeepSpeed as follows.
 
 ```
 # compilers and development settings
@@ -39,7 +38,7 @@ pip3 install omegaconf==2.2.3 \
   fairseq==0.10.2 \
   sentencepiece==0.1.97
 
-# install huggingface transformer
+# install huggingface libraries
 pip3 install transformers==4.23.1 \
   datasets==2.6.1
 
