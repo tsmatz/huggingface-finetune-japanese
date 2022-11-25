@@ -1,7 +1,8 @@
 # Hugging Face Fine-Tune - Japanese
 
 - [Hugging Face - Named entity recognition (NER)](./01-named-entity.ipynb)
-- [Hugging Face - Named entity recognition (NER) with DeepSpeed optimization](./01-named-entity-deepspeed.ipynb)
+- [Hugging Face - Text Summarization](./02-summarize.ipynb)
+- [Hugging Face - DeepSpeed optimization (NER example)](./01-named-entity-deepspeed.ipynb)
 
 ## How to Setup and Run
 
@@ -40,7 +41,8 @@ pip3 install omegaconf==2.2.3 \
 
 # install huggingface libraries
 pip3 install transformers==4.23.1 \
-  datasets==2.6.1
+  datasets==2.6.1 \
+  evaluate==0.3.0
 
 # install deepspeed
 sudo apt-get install -y python3-mpi4py
