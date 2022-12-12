@@ -2,6 +2,7 @@
 
 - [Hugging Face - Named entity recognition (NER)](./01-named-entity.ipynb)
 - [Hugging Face - Text Summarization](./02-summarize.ipynb)
+- [Hugging Face - Question Answering](./03-question-answering.ipynb)
 - [Hugging Face - DeepSpeed optimization (NER example)](./01-named-entity-deepspeed.ipynb)
 
 ## How to Setup and Run
