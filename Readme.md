@@ -3,13 +3,12 @@
 - [Hugging Face - Named entity recognition (NER)](./01-named-entity.ipynb)
 - [Hugging Face - Text Summarization](./02-summarize.ipynb)
 - [Hugging Face - Question Answering](./03-question-answering.ipynb)
-- [Hugging Face - DeepSpeed optimization (NER example)](./01-named-entity-deepspeed.ipynb)
 
 ## How to Setup and Run
 
 Here I have used **Ubuntu Server 20.04 LTS** in Microsoft Azure.
 
-Install and setup HuggingFace and DeepSpeed as follows.
+Install and setup HuggingFace as follows.
 
 ```
 # compilers and development settings
@@ -45,20 +44,18 @@ pip3 install transformers==4.23.1 \
   datasets==2.6.1 \
   evaluate==0.3.0
 
-# install deepspeed
-sudo apt-get install -y python3-mpi4py
-sudo apt-get install -y ninja-build
-pip3 install deepspeed==0.7.3 \
-  accelerate==0.13.2
-
 # install jupyter if you run code in notebook
 pip3 install jupyter
 ```
 
-> Note : When you optimize inference in DeepSpeed, install CUDA 10.2 instead.
-
-> Note : You can also install deepspeed with transformers' extras.<br>
+> Note : When you optimize training with HuggingFace-DeepSpeed integration, install the following packages and related libraries.<br>
+> ```sudo apt-get install -y python3-mpi4py```
+> ```sudo apt-get install -y ninja-build```
+> ```pip3 install deepspeed==0.7.3 accelerate==0.13.2```<br>
+> You can also install DeepSpeed with transformers' extras as follows.<br>
 > ```pip3 install transformers[deepspeed]```
+
+> Note : When you optimize inference also in DeepSpeed, install CUDA 10.2 instead.
 
 After installation, please logout and login again to take effect for "jupyter" path. Then, start Jupyter notebook as follows.<br>
 This will show the access url in console, such as ```http://localhost:8888/tree?token=xxxxxxxxxx```. (The default port is 8888.)
