@@ -49,8 +49,7 @@ pip3 install jupyter
 ```
 
 > Note : When you optimize training with HuggingFace-DeepSpeed integration, install the following packages and related libraries.<br>
-> ```sudo apt-get install -y python3-mpi4py```
-> ```sudo apt-get install -y ninja-build```
+> ```sudo apt-get install -y python3-mpi4py ninja-build```<br>
 > ```pip3 install deepspeed==0.7.3 accelerate==0.13.2```<br>
 > You can also install DeepSpeed with transformers' extras as follows.<br>
 > ```pip3 install transformers[deepspeed]```
