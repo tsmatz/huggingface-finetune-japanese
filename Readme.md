@@ -4,6 +4,8 @@
 - [Hugging Face - Text Summarization](./02-summarize.ipynb)
 - [Hugging Face - Question Answering](./03-question-answering.ipynb)
 
+> Note : For fine-tuning auto-regressive (decoder-only) LLM, see [here](https://github.com/tsmatz/finetune_llm_with_lora).
+
 ## How to Setup and Run
 
 Here I have used **Ubuntu Server 20.04 LTS** in Microsoft Azure.
